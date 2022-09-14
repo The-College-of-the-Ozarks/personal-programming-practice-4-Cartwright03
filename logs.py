@@ -10,4 +10,11 @@ def g(x):
 x = input("Input the value for x: ")
 x = float(x)
 
-print("g(" + str(x) + ") = " + str(g(x)))
+if x < -9:
+    print("Number to low, please input higher value")  
+
+elif x >= 8:
+    print("Number to high, please input lower value")
+    
+else:
+    print("g(" + str(x) + ") = " + str(g(x)))
