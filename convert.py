@@ -17,21 +17,37 @@ def mph_to_ms(mph):
 def mph_to_fts(mph):
     return mph*5280/3600
 
+print('=============================')
 mph = input("Input speed in mph: ")
+
 mph = float(mph)
 
 # menu
+print('=============================')
 print('What unit would you like to convert too?')
-print('1: speed in kph')
+print('=============================')
+print('1: Speed in kph')
+print('=============================')
 print('2: Speed in m/s')
+print('=============================')
 print('3: Speed in ft/s')
+print('=============================')
 choice = input('Input the number corresponding to your choice: ')
+print('=============================')
 #Menu work now
 if choice == '1':
+    print('=============================')
     print("Speed in kph is", mph_to_kph(mph))
+    print('=============================')
 elif choice == '2':
+    print('=============================')
     print("Speed in m/s is", mph_to_ms(mph))
+    print('=============================')
 elif choice== '3':
+    print('=============================')
     print("Speed in ft/s is", mph_to_fts(mph))
+    print('=============================')
 else:
+    print('=============================')
     print('Error: invalid input')
+    print('=============================')
